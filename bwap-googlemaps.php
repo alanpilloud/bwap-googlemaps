@@ -11,7 +11,7 @@ Author URI: http://alanpilloud.github.io
 defined( 'ABSPATH' ) or die;
 
 require 'plugin_update_check.php';
-$MyUpdateChecker = new PluginUpdateChecker_2_0 ('https://kernl.us/api/v1/updates/5680505a086e629607788b83/', __FILE__, 'bwap-googlemaps', 1);
+$MyUpdateChecker = new PluginUpdateChecker_2_0 ('https://kernl.us/api/v1/updates/568baf4c5f8a752d2f4ddea5/', __FILE__, 'bwap-googlemaps', 1);
 
 if (!class_exists('BwapGoogleMaps')) {
 
