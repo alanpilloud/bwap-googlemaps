@@ -41,7 +41,6 @@ if (!class_exists('BwapGoogleMaps')) {
 
             add_action('wp_footer', function() use ($atts, $mapid) {
                 ?>
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=<?= $atts['key'] ?>&amp;callback=initMap"></script>
                 <script>
                 function initMap() {
                   var myLatLng = {lat: <?= $atts['lat'] ?>, lng: <?= $atts['lon'] ?>};
@@ -50,6 +49,7 @@ if (!class_exists('BwapGoogleMaps')) {
 
                   var marker = new google.maps.Marker({map: map, position: myLatLng, title: "<?= $atts['title'] ?>" });
               }</script>
+              <script async defer src="https://maps.googleapis.com/maps/api/js?key=<?= $atts['key'] ?>&amp;callback=initMap"></script>
               <?php
             });
 
